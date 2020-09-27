@@ -2,14 +2,31 @@
 <html>
 <head>
 	<title>Chat with ME</title>
+	<style type="text/css">
+		#santhu{
+			text-align: "center";
+		}
+	</style>
+
+
 </head>
 <body>
-<div style="text-align: center;background-color: skyblue;color: red;padding: 20px;">
-<form action="https://api.telegram.org/bot1248975317:AAFfrfUQSPhwBYk6fVZnySX7ormjPQeHtgo/sendMessage" method="GET">
-	<input type="text" name="text">
+<div style="text-align: center;background-color: skyblue;padding: 20px;">
+<form action="https://api.telegram.org/bot1397850435:AAHfLfxPFvFJ8g1pBxqfD9X_EZ_WEc-z0XA/sendMessage" method="post" target="dummyFrame">
+	<label>Write your Message: </label>
+	<input type="text" name="text"value="">
 	<input type="hidden" name="chat_id" value="974959645">
-	<input type="submit" name="submit" value="submit">
+	<button onclick="myFunction()">send</button>
 </form>
+	<iframe name="dummyFrame" style="display: none;">Message sent</iframe>
+
+
+<script>
+function myFunction() {
+  alert("Message sent Successfully");
+}
+</script>
+	
 </div>
 </body>
 </html>
